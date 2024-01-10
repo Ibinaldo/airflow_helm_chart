@@ -26,7 +26,7 @@
 ## Introduction
 
 This chart will bootstrap an [Airflow](https://airflow.apache.org) deployment on a [Kubernetes](http://kubernetes.io)
-cluster using the [Helm](https://helm.sh) package manager.
+cluster using the [Helm](https://helm.sh) package manager. This deployment includes custom defined PVC and PV for logs storage. It syncs in DAGs from a [GitHub repository](https://github.com/Ibinaldo/airflow).
 
 ## Requirements
 
@@ -53,11 +53,3 @@ cluster using the [Helm](https://helm.sh) package manager.
 ## Documentation
 
 Full documentation for Helm Chart (latest **stable** release) lives [on the website](https://airflow.apache.org/docs/helm-chart/).
-
-> Note: If you're looking for documentation for main branch (latest development branch): you can find it on [s.apache.org/airflow-docs/](http://apache-airflow-docs.s3-website.eu-central-1.amazonaws.com/docs/helm-chart/latest/index.html).
-> Source code for documentation is in [../docs/helm-chart](https://github.com/apache/airflow/tree/main/docs/helm-chart)
->
-
-## Contributing
-
-Want to help build Apache Airflow? Check out our [contributing documentation](https://github.com/apache/airflow/blob/main/CONTRIBUTING.rst).
